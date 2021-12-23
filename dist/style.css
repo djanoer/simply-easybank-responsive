@@ -93,7 +93,7 @@ body {
   font-weight: 300;
   color: #9698a6;
   line-height: 1.3;
-  min-height: 300vh;
+  overflow-x: hidden;
 }
 
 @media (min-width: 64em) {
@@ -284,6 +284,11 @@ button:hover::before,
   .hide-for-desktop {
     display: none;
   }
+}
+
+.header {
+  position: relative;
+  z-index: 1;
 }
 
 .header.open .header__toggle > span:first-child {
@@ -711,6 +716,11 @@ button:hover::before,
   height: 1.25rem;
 }
 
+.footer__social a svg path {
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
 .footer__social a:hover svg path {
   fill: #31d35c;
 }
@@ -801,5 +811,10 @@ button:hover::before,
     -ms-grid-column-align: end;
         justify-self: end;
   }
+}
+
+.footer .attribution {
+  margin-top: 4rem;
+  font-size: 0.875rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -47,6 +47,10 @@
       display: inline-block;
       height: 1.25rem;
 
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
       &:hover svg path {
         fill: $limeGreen;
       }
@@ -117,5 +121,10 @@
       align-self: end;
       justify-self: end;
     }
+  }
+
+  .attribution {
+    margin-top: 4rem;
+    font-size: 0.875rem;
   }
 }
